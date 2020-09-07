@@ -1,0 +1,64 @@
+
+<html>
+  <head>
+      <script src= "controller.js"></script>
+<link rel="stylesheet" href="styles.css">      
+      
+    
+    <script src='https://storage.googleapis.com/checker_source/perspective_authorship_widget.js'></script>
+      <h1> RealTime Toxicity Classifier</h1>
+      <h2 class="display-3">What are your views on Nepotism?</h2>
+      
+  </head>
+  <body>
+      <div>
+      Nepotism is favoritism that is granted to relatives in various fields, including business, politics, entertainment, sports, religion and other activities.<br> The term originated with the assignment of nephews to important positions by Catholic popes and bishops.
+
+<br>Nepotism has been criticized since the ancient times by several philosophers, including Aristotle, Valluvar, and Confucius.<br> For instance, the ancient Indian philosopher Valluvar condemned nepotism as both evil and unwise.</div>   
+      
+       <form name="form">
+     
+    <textarea id='client_text_area' placeholder="Write your comment here..."></textarea>
+    <convai-checker
+        input-id='client_text_area'
+        demo-settings-json="{
+          &quot;gradientColors&quot;: [&quot;#25C1F9&quot;,&quot;#7C4DFF&quot;,&quot;#D400F9&quot;],
+          &quot;toxicScoreThreshold&quot;: 0.7,
+          &quot;neutralScoreThreshold&quot;: 0.3,
+          &quot;showFeedbackForNeutralScores&quot;: true,
+          &quot;showFeedbackForLowScores&quot;: true,
+          &quot;feedbackText&quot;: [&quot;Your comments are super clean. Good Job!&quot;,&quot;We're unsure, your comments might be a little offensive. You can proceed.&quot;,&quot;x% likely to be toxic. Please edit.&quot;],
+          &quot;loadingIconStyle&quot;: &quot;circle_square_diamond&quot;,
+          &quot;usePluginEndpoint&quot;: true,
+          &quot;modelName&quot;: &quot;TOXICITY&quot;,
+          &quot;communityId&quot;: &quot;plugin-user_1599470054452-967572&quot;,
+          &quot;fontFamily&quot;: &quot;Google Sans, sans-serif&quot;
+         }">
+    </convai-checker>
+      </form>
+      
+      
+   <button type="button" id="received" class="normal" onclick="acknowledge()">Post</button>
+      
+      <p id="received"></p>
+      <p id="output"> The received comments are:</p>
+      
+      <div id="show"> <br>
+      </div>
+      
+      <div id="displaycomment"></div>
+      
+      
+      
+      
+      
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <footer>The text on nepotism is from Wikipedia.<br><br>
+          Privacy Policy- <br> We don't store your data. The comments are deleted when you refresh the page. Feel free to comment and test out the feature.<br><br>
+      Developed By- Abhinandan</footer>    
+      
+  </body>
+     
+</html>
